@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Factoriel d'un nombre n</title>
+</head>
+<body>
+    <script>
+         var nombre = prompt("entrez un entier naturel positif ou nul","");
+         n = Number(nombre);
+
+        function factoriel(x){
+        if(x<0) {
+           alert("factoriel n'est définie que pour les entiers positifs");
+        }
+
+        if(x<=1)return 1;
+        else return x*factoriel(x-1);
+        }
+
+      try {
+        R=factoriel(n); 
+            alert("factoriel("+n+") = "+R);
+       }
+     catch(e) {
+        if (e instanceof Error) { 
+            alert(e.name + " : " + e.message);
+        }
+       }
+    </script>
+   
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>exercice6</title>
+</head>
+<body>
+    <form action="">
+        <input type="text" placeholder=" Entrez l'age de l'enfant" id="input">
+        <input type="submit"  value="valider" onclick="categorie()">
+    </form>
+     <script> 
+    function categorie(){
+        var age = document.getElementById("input").value;
+          if(age!="" && !isNaN(age)){
+            if(age >= 6 && age <= 7)
+            {
+            alert("L'enfant appartient  à la categorie 'Poussin' ");
+            }
+            else if(age >= 8 && age <= 9)
+            {
+            alert("L'enfant appartient  à la categorie  'Pupille'");
+       }
+           else if(age >= 10 && age <= 11)
+           {
+            alert("L'enfant appartient  à la categorie  'Minime'");
+            }
+            else if(age >= 12 && age <= 17)
+           {
+               alert("L'enfant appartient  à la categorie 'Cadet'");
+          }
+          else
+       {
+               alert("L'age saisie n'appartient à aucune categorie");
+           }
+    
+          }
+          else{
+              alert("Erreur:la valeur saisie est invalide");
+          }
+       } 
+    </script> 
+</body>
+</html>

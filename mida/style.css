@@ -1,0 +1,29 @@
+table
+    {
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%) ;
+    border: 1px solid black;
+    } 
+
+    #ligne1
+    {
+        background-color: grey;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .lignX
+    {
+        font-weight:bold;
+        background:purple !important;
+        color:grey;
+        text-align:center;
+    }
+
+    td:first-child
+    {
+        background-color: grey;  
+    }

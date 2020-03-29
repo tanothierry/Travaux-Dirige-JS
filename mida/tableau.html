@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Table de mutiplication</title>
+    <!-- My styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <script>
+        /* Création la table*/
+        document.write("<table border=1>");
+        /* Création la ligne 1 */
+        document.write("<tr><td class=lignX>","X","</td>");
+        for(var i=1;i<=10;i++)
+        document.write("<td id=ligne1>",i,"</td>");
+        /* créer les autres lignes*/
+        for(var i=1;i<11;i++)
+        {
+            /* Création de la ligne numéro i*/
+            document.write("<tr align=center>");
+            document.write("<td>",i,"</td>");
+            for(var j=1;j<=10;j++)
+            {
+                /* Création la colonne numéro j*/
+                document.write("<td>",i*j,"</td>");
+            }
+            document.write("</tr>");
+        }
+        document.write("</table>");
+    </script>
+</body>
+</html>
