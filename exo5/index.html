@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1 style="text-align: center;">Hello World</h1>
+
+
+    <script>
+            let nb1 = prompt('Veuillez entrez le premier chiffre');
+    let nb2 = prompt('Veuillez entrez le deuxième chiffre');
+    let nb3 = prompt('Veuillez entrez le troisième chiffre');
+    let isValid = true; 
+
+    if(nb1.length === 0 || nb2.length === 0 || nb3.length === 0){
+        isValid = false;
+    }else{
+        isValid = true;
+    }
+    if(isValid === true){
+        
+        if (nb1 == nb2 && nb2 == nb3 && nb1 == nb3) {
+            alert('Les trois variables sont identiques');
+        } else if (nb1 == nb2 || nb2 == nb3 || nb1 == nb3) {
+            alert('Deux des variables sont identiques');
+        } else {
+            alert('Les trois variables sont differentes');
+        }
+
+    }else{
+        alert('Veillez à ce que toutes les boîtes ne soient pas vide SVP');
+    }
+    </script>
+</body>
+
+</html>
