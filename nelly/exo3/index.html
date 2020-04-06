@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1 style="text-align: center;">Hello World</h1>
+    
+    <!--script-->
+
+    <script>
+     function premier(){
+	let nDiviseur = 0;
+	for(let i =0; i<= 100; i++){
+		for(let j = 2; j<= Math.sqrt(i);){
+			if(i % j ==0){
+				nDiviseur = 1;
+			}
+		}
+		if(nDiviseur == 0){
+			alert(i + " est un nombre premier\n");
+		}
+	}
+}
+
+alert(premier());
+    </script>
+</body>
+
+</html>
